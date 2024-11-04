@@ -15,11 +15,12 @@ header {
 nav {
     display: flex;
     justify-content: center;
-    gap: 20px; /* Aumentando o espaçamento entre os botões */
+    gap: 20px;
     margin-bottom: 20px;
 }
 
 nav a {
+    background-color: #2e2e8b; /* Fundo padrão para todos os links */
     color: white;
     padding: 10px 20px;
     border-radius: 20px;
@@ -28,31 +29,13 @@ nav a {
     font-size: 14px;
 }
 
-/* Cores específicas para cada link */
-nav a.home {
-    background-color: #00FF00; /* Verde para Home */
-}
-
-nav a.habilidades {
-    background-color: #FFFF00; /* Amarelo para Habilidades */
-}
-
-nav a.aparencia {
-    background-color: #FF1493; /* Rosa para Aparência */
-}
-
-nav a.viloes {
-    background-color: #FF0000; /* Vermelho para Vilões */
-}
-
-nav a.gotham {
-    background-color: #0000FF; /* Azul para Gotham City */
-}
-
-nav a.filme {
-    background-color: #FFFFFF; /* Branco para Filme */
-    color: black; /* Preto para o texto do botão Filme */
-}
+/* Cores específicas para o texto de cada link */
+nav a.home { color: green; }
+nav a.habilidades { color: yellow; }
+nav a.aparencia { color: hotpink; }
+nav a.viloes { color: red; }
+nav a.gotham { color: blue; }
+nav a.filme { color: white; }
 
 h1 {
     color: yellow;
