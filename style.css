@@ -15,28 +15,33 @@ header {
 nav {
     display: flex;
     justify-content: center;
-    gap: 10px;
+    gap: 20px; /* Aumentando o espaçamento entre os botões */
     margin-bottom: 20px;
 }
 
 nav a {
-    background-color: #3a3a9e;
+    background-color: #2e2e8b; /* Azul mais escuro */
     color: white;
-    padding: 10px 15px;
-    border-radius: 15px;
+    padding: 10px 20px;
+    border-radius: 20px;
     text-decoration: none;
     font-weight: bold;
+    font-size: 14px;
 }
 
 h1 {
     color: yellow;
     font-size: 28px;
     font-weight: bold;
+    letter-spacing: 1px; /* Adicionando espaçamento entre as letras */
+    margin-bottom: 10px;
 }
 
 h1 .highlight {
     color: hotpink;
     font-size: 32px;
+    display: block;
+    margin-top: 5px; /* Adicionando espaço entre o título e "HISTÓRIA" */
 }
 
 .content {
@@ -58,12 +63,13 @@ h1 .highlight {
 
 .batman-info button {
     margin-top: 10px;
-    padding: 10px 20px;
-    background-color: #3a3a9e;
+    padding: 10px 25px;
+    background-color: #2e2e8b; /* Azul mais escuro */
     color: white;
     border: none;
-    border-radius: 10px;
+    border-radius: 15px;
     font-size: 16px;
+    font-weight: bold;
     cursor: pointer;
 }
 
@@ -75,5 +81,5 @@ h1 .highlight {
 .story p {
     color: #ff4500;
     line-height: 1.6;
+    font-size: 16px;
 }
-
