@@ -1,0 +1,59 @@
+@import url("style.css"); /* Importa estilos do arquivo principal */
+
+/* Configurações básicas */
+body {
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+/* Título principal da página */
+h1 {
+    text-align: center;
+    color: #ff0066;
+    font-size: 36px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+/* Estilo dos ícones de habilidades */
+.habilidades-container {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 40px;
+}
+
+.habilidade-item {
+    position: relative;
+    text-align: center;
+}
+
+.habilidade-item img {
+    border-radius: 50%;
+    background: radial-gradient(circle, #ffcc00, #d4a017);
+    width: 200px;
+    height: 200px;
+}
+
+/* Caixa de informações */
+.habilidade-info {
+    position: absolute;
+    bottom: -80px; /* Ajuste para a posição */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 180px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 14px;
+    display: none; /* Oculta a princípio */
+    text-align: left;
+}
+
+/* Mostra a caixa de informações ao passar o mouse */
+.habilidade-item:hover .habilidade-info {
+    display: block;
+}
