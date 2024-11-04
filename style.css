@@ -37,21 +37,6 @@ nav a.viloes { color: red; }
 nav a.gotham { color: blue; }
 nav a.filme { color: white; }
 
-h1 {
-    color: yellow;
-    font-size: 28px;
-    font-weight: bold;
-    letter-spacing: 1px;
-    margin-bottom: 10px;
-}
-
-h1 .highlight {
-    color: hotpink;
-    font-size: 32px;
-    display: block;
-    margin-top: 5px;
-}
-
 .content {
     display: flex;
     justify-content: center;
@@ -84,6 +69,22 @@ h1 .highlight {
 .story {
     max-width: 600px;
     text-align: left;
+}
+
+.story h1 {
+    text-align: center; /* Centraliza o título em relação ao bloco de texto */
+    color: yellow;
+    font-size: 28px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+.story h1 .highlight {
+    color: hotpink;
+    font-size: 32px;
+    display: block;
+    margin-top: 5px;
 }
 
 .story p {
