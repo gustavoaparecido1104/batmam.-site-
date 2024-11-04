@@ -1,5 +1,3 @@
-/* style.css */
-
 body {
     background-color: black;
     color: white;
@@ -54,16 +52,24 @@ nav a.filme { color: white; }
     border-radius: 10px;
 }
 
-.batman-info button {
+.info-box {
     margin-top: 10px;
-    padding: 10px 25px;
-    background-color: #2e2e8b;
-    color: white;
-    border: none;
-    border-radius: 15px;
-    font-size: 16px;
-    font-weight: bold;
-    cursor: pointer;
+    padding: 15px;
+    background-color: #2e2e8b; /* Cor de fundo para o quadrado */
+    color: white; /* Cor do texto */
+    border-radius: 10px; /* Cantos arredondados */
+    max-width: 300px; /* Largura máxima do quadrado */
+    margin-left: auto; /* Centraliza horizontalmente */
+    margin-right: auto; /* Centraliza horizontalmente */
+}
+
+.info-box h2 {
+    margin: 0 0 10px 0; /* Espaçamento abaixo do título */
+    font-size: 20px; /* Tamanho do título */
+}
+
+.info-box p {
+    margin: 5px 0; /* Espaçamento entre os parágrafos */
 }
 
 .story {
@@ -92,3 +98,4 @@ nav a.filme { color: white; }
     line-height: 1.6;
     font-size: 16px;
 }
+
