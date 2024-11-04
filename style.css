@@ -20,7 +20,6 @@ nav {
 }
 
 nav a {
-    background-color: #2e2e8b; /* Azul mais escuro */
     color: white;
     padding: 10px 20px;
     border-radius: 20px;
@@ -29,11 +28,37 @@ nav a {
     font-size: 14px;
 }
 
+/* Cores específicas para cada link */
+nav a.home {
+    background-color: #00FF00; /* Verde para Home */
+}
+
+nav a.habilidades {
+    background-color: #FFFF00; /* Amarelo para Habilidades */
+}
+
+nav a.aparencia {
+    background-color: #FF1493; /* Rosa para Aparência */
+}
+
+nav a.viloes {
+    background-color: #FF0000; /* Vermelho para Vilões */
+}
+
+nav a.gotham {
+    background-color: #0000FF; /* Azul para Gotham City */
+}
+
+nav a.filme {
+    background-color: #FFFFFF; /* Branco para Filme */
+    color: black; /* Preto para o texto do botão Filme */
+}
+
 h1 {
     color: yellow;
     font-size: 28px;
     font-weight: bold;
-    letter-spacing: 1px; /* Adicionando espaçamento entre as letras */
+    letter-spacing: 1px;
     margin-bottom: 10px;
 }
 
@@ -41,7 +66,7 @@ h1 .highlight {
     color: hotpink;
     font-size: 32px;
     display: block;
-    margin-top: 5px; /* Adicionando espaço entre o título e "HISTÓRIA" */
+    margin-top: 5px;
 }
 
 .content {
@@ -64,7 +89,7 @@ h1 .highlight {
 .batman-info button {
     margin-top: 10px;
     padding: 10px 25px;
-    background-color: #2e2e8b; /* Azul mais escuro */
+    background-color: #2e2e8b;
     color: white;
     border: none;
     border-radius: 15px;
