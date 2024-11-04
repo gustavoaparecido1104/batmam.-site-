@@ -8,6 +8,23 @@ body {
     margin: 0;
 }
 
+/* Estilo específico para os links do menu com cores de texto definidas */
+nav a {
+    color: white; /* Define uma cor padrão para os links */
+    text-decoration: none;
+    padding: 10px 20px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+/* Cores específicas para cada link */
+nav a[href="index.html"] { color: green; } /* Home - Verde */
+nav a[href="habilidades.html"] { color: yellow; } /* Habilidades - Amarelo */
+nav a[href="aparencia.html"] { color: hotpink; } /* Aparência - Rosa */
+nav a[href="viloes.html"] { color: red; } /* Vilões - Vermelho */
+nav a[href="gotham.html"] { color: blue; } /* Gotham City - Azul */
+nav a[href="filme.html"] { color: white; } /* Filme - Branco */
+
 /* Título principal da página */
 h1 {
     text-align: center;
