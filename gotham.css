@@ -17,7 +17,6 @@ header {
 }
 
 nav a {
-    color: white;
     text-decoration: none;
     padding: 10px 15px;
     margin: 0 5px;
@@ -25,6 +24,14 @@ nav a {
     border-radius: 15px;
     transition: background 0.3s, color 0.3s;
 }
+
+/* Cores específicas para cada link */
+nav a[href="home.html"] { color: #00ff00; } /* Verde para Home */
+nav a[href="habilidades.html"] { color: #ffff00; } /* Amarelo para Habilidades */
+nav a[href="aparencia.html"] { color: #ff00ff; } /* Rosa para Aparência */
+nav a[href="viloes.html"] { color: #ff0000; } /* Vermelho para Vilões */
+nav a[href="gothamcity.html"] { color: #0000ff; } /* Azul para Gotham City */
+nav a[href="filme.html"] { color: #ffffff; } /* Branco para Filme */
 
 nav a:hover {
     color: #000;
@@ -54,13 +61,17 @@ section {
 
 table {
     margin: 20px auto;
+    width: 80%;
+}
+
+table td {
+    padding: 0 20px; /* Adiciona espaço entre as imagens */
 }
 
 img {
     width: 150px;
     height: 150px;
     border-radius: 50%;
-    border: 3px solid #e74c3c;
     transition: transform 0.3s;
 }
 
@@ -72,8 +83,17 @@ img:hover {
     font-size: 1.2em;
     color: #e74c3c;
     text-transform: uppercase;
-    margin-top: 10px;
+    margin-top: 5px;
     text-shadow: 0 0 5px #e74c3c;
+}
+
+/* Rótulos acima das informações */
+.label {
+    font-size: 1em;
+    color: #ffffff;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    text-shadow: 0 0 5px #ffffff;
 }
 
 footer {
@@ -84,4 +104,3 @@ footer {
     color: #f39c12;
     text-shadow: 0 0 10px #f39c12;
 }
-
