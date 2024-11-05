@@ -1,0 +1,84 @@
+/* Estilos básicos do site */
+body {
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+header nav {
+    text-align: center;
+    padding: 10px;
+    background-color: #222;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+header nav a:hover {
+    color: #00bfff;
+}
+
+h1 {
+    text-align: center;
+    color: #ff0066;
+    font-size: 36px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+/* Estilos para o layout da página Aparência */
+.container {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    padding: 20px;
+    color: #00bfff;
+}
+
+/* Estilos específicos para cada seção */
+.section {
+    width: 45%;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 8px;
+}
+
+/* Estilo para os títulos das seções */
+.section h2 {
+    color: yellow;
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Estilos das imagens */
+.section img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Estilos para a seção de Personalidade */
+.center-image {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.center-image h2 {
+    color: #d4a017;
+    font-size: 28px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.center-image img {
+    max-width: 300px;
+    border-radius: 8px;
+}
