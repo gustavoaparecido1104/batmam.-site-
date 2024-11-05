@@ -47,12 +47,14 @@ section button:hover {
     background-color: #A9A9A9; /* Escurece o botão ao passar o mouse */
 }
 
-/* Estilo para o iframe do vídeo */
-section iframe {
+/* Estilo para a imagem do filme */
+.movie-image img {
     display: block;
     margin: 20px auto;
     border: 3px solid #333; /* Borda cinza escura */
     border-radius: 8px;
+    width: 560px;
+    height: 315px;
 }
 
 /* Estilos de navegação, com cores de links */
