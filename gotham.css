@@ -20,7 +20,7 @@ nav a {
     text-decoration: none;
     padding: 10px 15px;
     margin: 0 5px;
-    background-color:#2e2e8b
+        background: linear-gradient(45deg,  #2e2e8b, #3498db);
     border-radius: 15px;
     transition: background 0.3s, color 0.3s;
 }
@@ -35,7 +35,7 @@ nav a[href="filme.html"] { color: #ffffff; } /* Branco para Filme */
 
 nav a:hover {
     color: #000;
-    background: linear-gradient(45deg, #3498db, #e74c3c);
+    
 }
 
 h1 {
@@ -104,3 +104,4 @@ footer {
     color: #f39c12;
     text-shadow: 0 0 10px #f39c12;
 }
+
