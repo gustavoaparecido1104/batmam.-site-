@@ -64,10 +64,9 @@ section button:hover {
     border-radius: 8px;
 }
 
-/* Estilos de navegação, com cores de links */
+/* Estilos de navegação com cores para cada link */
 nav a {
     background-color: #2e2e8b;
-    color: white;
     padding: 10px 20px;
     border-radius: 20px;
     text-decoration: none;
@@ -76,12 +75,12 @@ nav a {
     transition: background-color 0.3s ease;
 }
 
-nav a.home { color: green; }
-nav a.habilidades { color: yellow; }
-nav a.aparencia { color: hotpink; }
-nav a.viloes { color: red; }
-nav a.gothamcity { color: blue; }
-nav a.filme { color: white; }
+nav a.home { color: green; }          /* Home */
+nav a.habilidades { color: yellow; }   /* Habilidades */
+nav a.aparencia { color: hotpink; }    /* Aparência */
+nav a.viloes { color: red; }           /* Vilões */
+nav a.gothamcity { color: blue; }      /* Gotham City */
+nav a.filme { color: white; }          /* Filme */
 
 nav {
     display: flex;
@@ -90,6 +89,7 @@ nav {
     margin-top: 20px;
 }
 
+/* Efeito hover para os links */
 nav a:hover {
-    background-color: #444; /* Escurece ao passar o mouse */
+    background-color: #444; /* Escurece o fundo ao passar o mouse */
 }
