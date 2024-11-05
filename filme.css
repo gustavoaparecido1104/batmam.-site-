@@ -1,0 +1,86 @@
+/* Importa estilos básicos do primeiro CSS */
+@import url('style.css'); /* Certifique-se de que o caminho esteja correto */
+
+/* Configurações específicas para a página de filme */
+
+body {
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+/* Título da seção */
+h1 {
+    color: #FF00FF; /* Rosa vibrante */
+    text-align: center;
+    font-size: 32px;
+    margin-top: 20px;
+}
+
+/* Parágrafo do texto sobre o filme */
+section p {
+    color: #FF4500; /* Vermelho */
+    max-width: 600px;
+    margin: 20px auto;
+    line-height: 1.6;
+    font-size: 18px;
+    text-align: center;
+}
+
+/* Estilização do botão */
+section button {
+    display: block;
+    margin: 20px auto;
+    padding: 12px 24px;
+    background-color: #D3D3D3; /* Cinza claro */
+    color: #333; /* Cinza escuro */
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+section button:hover {
+    background-color: #A9A9A9; /* Escurece o botão ao passar o mouse */
+}
+
+/* Estilo para o iframe do vídeo */
+section iframe {
+    display: block;
+    margin: 20px auto;
+    border: 3px solid #333; /* Borda cinza escura */
+    border-radius: 8px;
+}
+
+/* Estilos de navegação, com cores de links */
+nav a {
+    background-color: #2e2e8b;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+nav a.home { color: green; }
+nav a.habilidades { color: yellow; }
+nav a.aparencia { color: hotpink; }
+nav a.viloes { color: red; }
+nav a.gothamcity { color: blue; }
+nav a.filme { color: white; }
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+nav a:hover {
+    background-color: #444; /* Escurece ao passar o mouse */
+}
