@@ -57,20 +57,25 @@ h1 {
 /* Caixa de informações */
 .habilidade-info {
     position: absolute;
-    bottom: -80px; /* Ajuste para a posição */
+    bottom: -100px; /* Ajuste a posição */
     left: 50%;
     transform: translateX(-50%);
     width: 180px;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.9);
     color: white;
     padding: 10px;
+    border: 2px solid #ffffff;
     border-radius: 8px;
     font-size: 14px;
-    display: none; /* Oculta a princípio */
     text-align: left;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
 }
 
 /* Mostra a caixa de informações ao passar o mouse */
 .habilidade-item:hover .habilidade-info {
-    display: block;
+    opacity: 1;
 }
