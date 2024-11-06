@@ -21,7 +21,7 @@ body {
 .aparencia-titulo img {
   display: block;
   margin: 10px auto;
-  max-width: 50%; /* Ajuste para o tamanho desejado */
+  max-width: 40%; /* Ajuste para o tamanho desejado */
   border-radius: 10px;
 }
 
@@ -37,6 +37,8 @@ body {
 .secao-batman {
   width: 45%;
   text-align: left;
+  color: yellow; /* Cor de texto para a seção do Batman */
+  float: left;
 }
 
 .secao-batman h2 {
@@ -45,7 +47,6 @@ body {
 }
 
 .secao-batman p {
-  color: #00ffff;
   font-size: 1em;
   line-height: 1.5;
 }
@@ -62,6 +63,8 @@ body {
 .secao-bruce {
   width: 45%;
   text-align: left;
+  color: blue; /* Cor de texto para a seção do Bruce Wayne */
+  float: right;
 }
 
 .secao-bruce h2 {
@@ -70,7 +73,6 @@ body {
 }
 
 .secao-bruce p {
-  color: #ffff00;
   font-size: 1em;
   line-height: 1.5;
 }
@@ -87,6 +89,7 @@ body {
 .secao-personalidade {
   text-align: center;
   margin: 20px auto;
+  clear: both;
 }
 
 .secao-personalidade h2 {
@@ -100,6 +103,7 @@ body {
   display: block;
 }
 
+/* Estilos de navegação */
 nav {
     display: flex;
     justify-content: center;
@@ -108,7 +112,7 @@ nav {
 }
 
 nav a {
-    background-color: #2e2e8b; /* Fundo padrão para todos os links */
+    background-color: #2e2e8b;
     color: white;
     padding: 10px 20px;
     border-radius: 20px;
@@ -124,14 +128,6 @@ nav a.aparencia { color: hotpink; }
 nav a.viloes { color: red; }
 nav a.gotham { color: blue; }
 nav a.filme { color: white; }
-
-.content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    padding: 20px;
-}
 
 /* Estilos para o rodapé */
 footer {
