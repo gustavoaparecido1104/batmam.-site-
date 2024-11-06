@@ -1,82 +1,112 @@
-
-/* Importa estilos base */
-@import url('styles.css');
-
+/* Estilos Gerais */
 body {
-    background-color: black;
-    color: white;
-    font-family: Arial, sans-serif;
+  background-color: black;
+  color: white;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
-header nav a {
-    color: white;
-    text-decoration: none;
-    margin: 0 10px;
-    padding: 5px 10px;
-    border-radius: 5px;
+h1, h2 {
+  font-weight: bold;
+  text-align: center;
 }
 
-header nav a.active {
-    background-color: purple;
-    color: cyan;
+/* Título da Página "Aparência" */
+.aparencia-titulo {
+  text-align: center;
+  margin-top: 20px;
 }
 
-.main-title {
-    text-align: center;
-    color: #ff0080; /* Cor rosa para o título principal */
-    font-size: 36px;
-    margin-top: 20px;
+.aparencia-titulo h1 {
+  color: #ff0099; /* Cor de destaque para o título */
+  font-size: 3em;
 }
 
+.aparencia-titulo img {
+  display: block;
+  margin: 10px auto;
+  max-width: 50%; /* Ajuste para o tamanho desejado */
+  border-radius: 10px;
+}
+
+/* Estilos das Seções de Conteúdo */
 .container {
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
-    margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 20px;
 }
 
-.section {
-    width: 45%;
-    color: #00ffff; /* Azul claro para o texto */
+.secao-batman, .secao-bruce, .secao-personalidade {
+  text-align: center;
+  width: 30%;
+  margin-bottom: 20px;
 }
 
-.section img {
-    width: 100%;
-    border: 3px solid #333;
-    margin-top: 10px;
+/* Estilos para a seção "Como Batman" */
+.secao-batman h2 {
+  color: #00ffff;
+  font-size: 1.8em;
+  margin-bottom: 10px;
 }
 
-.title-batman,
-.title-bruce {
-    color: yellow;
-    font-size: 24px;
-    text-align: center;
+.secao-batman p {
+  color: #00ffff;
+  font-size: 1em;
+  line-height: 1.5;
+  padding: 0 10px;
 }
 
-.center-image {
-    text-align: center;
-    margin: 30px 0;
+/* Estilos para a seção "Como Bruce Wayne" */
+.secao-bruce h2 {
+  color: #ffff00;
+  font-size: 1.8em;
+  margin-bottom: 10px;
 }
 
-.title-personalidade {
-    color: #bfbfbf; /* Cinza claro para o título "Personalidade" */
-    font-size: 30px;
-    text-transform: uppercase;
+.secao-bruce p {
+  color: #ffff00;
+  font-size: 1em;
+  line-height: 1.5;
+  padding: 0 10px;
 }
 
-.center-image img {
-    width: 15%;
-    margin-top: 10px;
+/* Estilos para as imagens */
+.secao-batman img, .secao-bruce img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-top: 10px;
 }
 
-/* Estilo para o link dos vilões */
+/* Seção de Personalidade */
+.secao-personalidade h2 {
+  color: #c0c0c0;
+  font-size: 2em;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.secao-personalidade img {
+  width: 120px;
+  margin: 15px auto;
+  display: block;
+}
+
+/* Rodapé - Link de Navegação */
 footer {
-    text-align: center;
-    margin-top: 40px;
+  text-align: center;
+  padding: 10px;
+  font-size: 1.2em;
 }
 
 footer a {
-    font-size: 24px;
-    color: #ff0080;
-    text-decoration: none;
+  color: #ff0099;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+footer a:hover {
+  text-decoration: underline;
 }
