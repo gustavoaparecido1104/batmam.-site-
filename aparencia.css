@@ -94,7 +94,6 @@ body {
 
 /* Seção "Personalidade" - Centralizada */
 .secao-personalidade {
-  grid-column: span 2;
   text-align: center;
   margin: 30px auto;
   padding: 20px;
