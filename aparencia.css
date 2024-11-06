@@ -26,31 +26,23 @@ body {
   border-radius: 10px;
 }
 
-/* Layout principal com flexbox para simetria */
+/* Layout principal com flexbox para alinhamento lado a lado */
 .main-container {
   display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
+  justify-content: space-between;
   padding: 20px;
-  gap: 40px; /* Espaço uniforme entre as seções */
+  gap: 40px;
 }
 
-/* Seção Como Batman - lado esquerdo */
-.secao-batman,
-.secao-bruce {
-  width: 45%;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
+/* Seção Como Batman - alinhada à esquerda */
 .secao-batman {
+  width: 45%;
+  text-align: left;
   color: yellow;
 }
 
 .secao-batman h2 {
-  color: #ffff00;
+  color: #00ffff;
   font-size: 1.8em;
 }
 
@@ -58,7 +50,6 @@ body {
   font-size: 1em;
   line-height: 1.5;
   white-space: pre-line;
-  text-align: left;
   margin-bottom: 15px;
 }
 
@@ -70,13 +61,18 @@ body {
   margin-top: 10px;
 }
 
-/* Seção Como Bruce Wayne - lado direito */
+/* Seção Como Bruce Wayne - alinhada à direita */
 .secao-bruce {
+  width: 45%;
+  text-align: right; /* Alinha o texto à direita */
   color: blue;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end; /* Alinha itens ao lado direito */
 }
 
 .secao-bruce h2 {
-  color: #0000ff;
+  color: #ffff00;
   font-size: 1.8em;
 }
 
@@ -84,7 +80,6 @@ body {
   font-size: 1em;
   line-height: 1.5;
   white-space: pre-line;
-  text-align: left;
   margin-bottom: 15px;
 }
 
