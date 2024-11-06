@@ -2,17 +2,10 @@
 body {
   background-color: black;
   color: white;
-  font-family: Arial, sans-serif;
+  font-family: 'Roboto', sans-serif;
   margin: 0;
   padding: 0;
-  line-height: 1.6; /* Melhora a legibilidade */
-}
-
-/* Fonte personalizada para o site */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-
-body {
-  font-family: 'Roboto', sans-serif;
+  line-height: 1.6;
 }
 
 /* Estilo para o título "Aparência" e imagem central */
@@ -22,7 +15,7 @@ body {
 }
 
 .aparencia-titulo h1 {
-  color: #ff0099; /* Cor de destaque para o título */
+  color: #ff0099;
   font-size: 3em;
 }
 
@@ -33,21 +26,27 @@ body {
   border-radius: 10px;
 }
 
-/* Layout principal */
-.container {
+/* Layout principal com flexbox para simetria */
+.main-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-wrap: wrap;
   padding: 20px;
+  gap: 40px; /* Espaço uniforme entre as seções */
 }
 
 /* Seção Como Batman - lado esquerdo */
-.secao-batman {
+.secao-batman,
+.secao-bruce {
   width: 45%;
-  text-align: left;
-  color: yellow; /* Cor de texto para a seção do Batman */
-  float: left;
-  margin-right: 10px; /* Distância da seção Bruce Wayne */
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.secao-batman {
+  color: yellow;
 }
 
 .secao-batman h2 {
@@ -58,12 +57,14 @@ body {
 .secao-batman p {
   font-size: 1em;
   line-height: 1.5;
-  white-space: pre-line; /* Mantém quebras de linha no texto */
+  white-space: pre-line;
+  text-align: left;
+  margin-bottom: 15px;
 }
 
 .secao-batman img {
   width: 100%;
-  max-width: 300px;
+  max-width: 250px;
   height: auto;
   border-radius: 8px;
   margin-top: 10px;
@@ -71,11 +72,7 @@ body {
 
 /* Seção Como Bruce Wayne - lado direito */
 .secao-bruce {
-  width: 45%;
-  text-align: left;
-  color: blue; /* Cor de texto para a seção do Bruce Wayne */
-  float: right;
-  margin-left: auto; /* Alinha imagem com a borda direita */
+  color: blue;
 }
 
 .secao-bruce h2 {
@@ -86,16 +83,17 @@ body {
 .secao-bruce p {
   font-size: 1em;
   line-height: 1.5;
-  white-space: pre-line; /* Mantém quebras de linha no texto */
+  white-space: pre-line;
+  text-align: left;
+  margin-bottom: 15px;
 }
 
 .secao-bruce img {
   width: 100%;
-  max-width: 300px;
+  max-width: 250px;
   height: auto;
   border-radius: 8px;
   margin-top: 10px;
-  margin-right: 0; /* Encosta imagem na borda direita */
 }
 
 /* Seção Personalidade - centralizada abaixo das outras */
