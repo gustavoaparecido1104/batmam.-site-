@@ -26,7 +26,7 @@ body {
   border-radius: 10px;
 }
 
-/* Layout principal com flexbox para alinhamento lado a lado */
+/* Layout principal com flexbox para simetria */
 .main-container {
   display: flex;
   justify-content: space-between;
@@ -36,6 +36,9 @@ body {
 
 /* Seção Como Batman - alinhada à esquerda */
 .secao-batman {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
   width: 45%;
   text-align: left;
   color: yellow;
@@ -44,6 +47,7 @@ body {
 .secao-batman h2 {
   color: #00ffff;
   font-size: 1.8em;
+  margin-right: 20px; /* Espaço entre o texto e a imagem */
 }
 
 .secao-batman p {
@@ -58,22 +62,22 @@ body {
   max-width: 250px;
   height: auto;
   border-radius: 8px;
-  margin-top: 10px;
 }
 
 /* Seção Como Bruce Wayne - alinhada à direita */
 .secao-bruce {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
   width: 45%;
   text-align: right; /* Alinha o texto à direita */
   color: blue;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end; /* Alinha itens ao lado direito */
 }
 
 .secao-bruce h2 {
   color: #ffff00;
   font-size: 1.8em;
+  margin-left: 20px; /* Espaço entre o texto e a imagem */
 }
 
 .secao-bruce p {
@@ -88,7 +92,6 @@ body {
   max-width: 250px;
   height: auto;
   border-radius: 8px;
-  margin-top: 10px;
 }
 
 /* Seção Personalidade - centralizada abaixo das outras */
