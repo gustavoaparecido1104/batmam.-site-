@@ -1,1 +1,109 @@
+/* Estilos para o fundo e cores do texto */
+body {
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+/* Estilo para o título principal e subtítulo */
+#viloes h1 {
+    color: #ff00ff;
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+}
+
+#viloes h2 {
+    color: #00ccff;
+    font-size: 18px;
+    text-align: center;
+    margin-top: -10px;
+}
+
+/* Menu de navegação */
+nav a {
+    color: #ffffff;
+    background-color: #0000ff;
+    padding: 10px 15px;
+    margin: 5px;
+    text-decoration: none;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    background-color: #ff00ff;
+    color: black;
+}
+
+/* Estilos para a tabela de vilões */
+table {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+
+table td {
+    padding: 15px;
+}
+
+/* Estilos para as imagens dos vilões e bordas */
+table img {
+    width: 100px;
+    border-radius: 15px;
+    border: 3px solid #ff00ff;
+}
+
+#viloes div {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #ff00ff;
+}
+
+/* Botão de biografia */
+table a {
+    display: inline-block;
+    background-color: #0000ff;
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+table a:hover {
+    background-color: #ff00ff;
+    color: black;
+}
+
+/* Cores de fundo para cada vilão */
+#coringa {
+    background-color: #000000;
+}
+
+#pinguim {
+    background-color: #0000ff;
+}
+
+#charada {
+    background-color: #00ff00;
+}
+
+#duas-caras {
+    background-color: #ffffff;
+}
+
+#mulher-gato {
+    background-color: #333333;
+}
+
+.vilao-card {
+    width: 120px;
+    height: 200px;
+    padding: 10px;
+    border-radius: 15px;
+    border: 2px solid #ff00ff;
+}
 
