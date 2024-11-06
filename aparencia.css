@@ -5,6 +5,14 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
+  line-height: 1.6; /* Melhora a legibilidade */
+}
+
+/* Fonte personalizada para o site */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+  font-family: 'Roboto', sans-serif;
 }
 
 /* Estilo para o título "Aparência" e imagem central */
@@ -21,11 +29,11 @@ body {
 .aparencia-titulo img {
   display: block;
   margin: 10px auto;
-  max-width: 40%; /* Ajuste para o tamanho desejado */
+  max-width: 40%;
   border-radius: 10px;
 }
 
-/* Estilos para o layout principal */
+/* Layout principal */
 .container {
   display: flex;
   justify-content: space-between;
@@ -39,16 +47,18 @@ body {
   text-align: left;
   color: yellow; /* Cor de texto para a seção do Batman */
   float: left;
+  margin-right: 10px; /* Distância da seção Bruce Wayne */
 }
 
 .secao-batman h2 {
-  color: #ffff00;
+  color: #00ffff;
   font-size: 1.8em;
 }
 
 .secao-batman p {
   font-size: 1em;
   line-height: 1.5;
+  white-space: pre-line; /* Mantém quebras de linha no texto */
 }
 
 .secao-batman img {
@@ -65,16 +75,18 @@ body {
   text-align: left;
   color: blue; /* Cor de texto para a seção do Bruce Wayne */
   float: right;
+  margin-left: auto; /* Alinha imagem com a borda direita */
 }
 
 .secao-bruce h2 {
-  color: #0000ff;
+  color: #ffff00;
   font-size: 1.8em;
 }
 
 .secao-bruce p {
   font-size: 1em;
   line-height: 1.5;
+  white-space: pre-line; /* Mantém quebras de linha no texto */
 }
 
 .secao-bruce img {
@@ -83,6 +95,7 @@ body {
   height: auto;
   border-radius: 8px;
   margin-top: 10px;
+  margin-right: 0; /* Encosta imagem na borda direita */
 }
 
 /* Seção Personalidade - centralizada abaixo das outras */
