@@ -11,7 +11,7 @@ body {
 /* Título "Aparência" e imagem central */
 .aparencia-titulo {
   text-align: center;
-  margin-top: 20px;
+  margin-top: 30px;
 }
 
 .aparencia-titulo h1 {
@@ -27,13 +27,14 @@ body {
   border-radius: 10px;
 }
 
-/* Layout principal com grid para alinhamento */
+/* Layout principal com grid para alinhamento das seções */
 .container {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 40px;
-  padding: 40px;
+  padding: 20px 40px;
   justify-items: center;
+  margin-top: -50px; /* Ajuste para posicionar a seção "Como Batman" e "Como Bruce Wayne" mais próximo ao título */
 }
 
 .secao {
@@ -43,21 +44,22 @@ body {
   border-radius: 10px;
 }
 
-.secao h2 {
+/* Título e Texto "Como Batman" */
+.secao-batman h2 {
   font-size: 1.8em;
-  color: #00ffff;
+  color: #00ffff; /* Cor azul */
   text-align: center;
   margin-bottom: 10px;
 }
 
-.secao p {
+.secao-batman p {
+  color: #00ffff; /* Cor azul para o texto */
   font-size: 1em;
   line-height: 1.5;
   margin-bottom: 15px;
-  color: #b0b0b0;
 }
 
-.secao img {
+.secao-batman img {
   width: 100%;
   max-width: 250px;
   height: auto;
@@ -66,7 +68,31 @@ body {
   margin: 10px auto;
 }
 
-/* Seção Personalidade - Centralizada */
+/* Título e Texto "Como Bruce Wayne" */
+.secao-bruce h2 {
+  font-size: 1.8em;
+  color: yellow; /* Cor amarela */
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.secao-bruce p {
+  color: yellow; /* Cor amarela para o texto */
+  font-size: 1em;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+.secao-bruce img {
+  width: 100%;
+  max-width: 250px;
+  height: auto;
+  border-radius: 8px;
+  display: block;
+  margin: 10px auto;
+}
+
+/* Seção "Personalidade" - Centralizada */
 .secao-personalidade {
   grid-column: span 2;
   text-align: center;
