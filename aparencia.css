@@ -7,12 +7,7 @@ body {
   padding: 0;
 }
 
-h1, h2 {
-  font-weight: bold;
-  text-align: center;
-}
-
-/* Título da Página "Aparência" */
+/* Estilo para o título "Aparência" e imagem central */
 .aparencia-titulo {
   text-align: center;
   margin-top: 20px;
@@ -30,62 +25,73 @@ h1, h2 {
   border-radius: 10px;
 }
 
-/* Estilos das Seções de Conteúdo */
+/* Estilos para o layout principal */
 .container {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   flex-wrap: wrap;
   padding: 20px;
 }
 
-.secao-batman, .secao-bruce, .secao-personalidade {
-  text-align: center;
-  width: 30%;
-  margin-bottom: 20px;
+/* Seção Como Batman - lado esquerdo */
+.secao-batman {
+  width: 45%;
+  text-align: left;
 }
 
-/* Estilos para a seção "Como Batman" */
 .secao-batman h2 {
   color: #00ffff;
   font-size: 1.8em;
-  margin-bottom: 10px;
 }
 
 .secao-batman p {
   color: #00ffff;
   font-size: 1em;
   line-height: 1.5;
-  padding: 0 10px;
 }
 
-/* Estilos para a seção "Como Bruce Wayne" */
+.secao-batman img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 8px;
+  margin-top: 10px;
+}
+
+/* Seção Como Bruce Wayne - lado direito */
+.secao-bruce {
+  width: 45%;
+  text-align: left;
+}
+
 .secao-bruce h2 {
   color: #ffff00;
   font-size: 1.8em;
-  margin-bottom: 10px;
 }
 
 .secao-bruce p {
   color: #ffff00;
   font-size: 1em;
   line-height: 1.5;
-  padding: 0 10px;
 }
 
-/* Estilos para as imagens */
-.secao-batman img, .secao-bruce img {
-  max-width: 100%;
+.secao-bruce img {
+  width: 100%;
+  max-width: 300px;
   height: auto;
   border-radius: 8px;
   margin-top: 10px;
 }
 
-/* Seção de Personalidade */
+/* Seção Personalidade - centralizada abaixo das outras */
+.secao-personalidade {
+  text-align: center;
+  margin: 20px auto;
+}
+
 .secao-personalidade h2 {
   color: #c0c0c0;
   font-size: 2em;
-  margin-top: 20px;
-  text-align: center;
 }
 
 .secao-personalidade img {
@@ -94,11 +100,34 @@ h1, h2 {
   display: block;
 }
 
-/* Rodapé - Link de Navegação */
+/* Estilos para o menu de navegação */
+nav {
+  background-color: #333;
+  padding: 10px;
+  text-align: center;
+}
+
+nav a {
+  color: #ff0099;
+  text-decoration: none;
+  margin: 0 15px;
+  padding: 8px 15px;
+  background-color: #444;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+  background-color: #555;
+  color: white;
+}
+
+/* Estilos para o rodapé */
 footer {
   text-align: center;
   padding: 10px;
   font-size: 1.2em;
+  color: #ff0099;
 }
 
 footer a {
