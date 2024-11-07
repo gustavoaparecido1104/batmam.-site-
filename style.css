@@ -1,3 +1,4 @@
+/* Estilo Geral */
 body {
     background-color: black;
     color: white;
@@ -5,11 +6,13 @@ body {
     margin: 0;
 }
 
+/* Cabeçalho */
 header {
     text-align: center;
     padding: 20px 0;
 }
 
+/* Navegação com efeito Neon */
 nav {
     display: flex;
     justify-content: center;
@@ -25,16 +28,18 @@ nav a {
     text-decoration: none;
     font-weight: bold;
     font-size: 14px;
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #2e2e8b, 0 0 20px #2e2e8b, 0 0 25px #2e2e8b; /* Efeito neon */
 }
 
 /* Cores específicas para o texto de cada link */
-nav a.home { color: green; }
-nav a.habilidades { color: yellow; }
-nav a.aparencia { color: hotpink; }
-nav a.viloes { color: red; }
-nav a.gotham { color: blue; }
-nav a.filme { color: white; }
+nav a.home { color: green; text-shadow: 0 0 5px green, 0 0 10px green, 0 0 15px green; }
+nav a.habilidades { color: yellow; text-shadow: 0 0 5px yellow, 0 0 10px yellow, 0 0 15px yellow; }
+nav a.aparencia { color: hotpink; text-shadow: 0 0 5px hotpink, 0 0 10px hotpink, 0 0 15px hotpink; }
+nav a.viloes { color: red; text-shadow: 0 0 5px red, 0 0 10px red, 0 0 15px red; }
+nav a.gotham { color: blue; text-shadow: 0 0 5px blue, 0 0 10px blue, 0 0 15px blue; }
+nav a.filme { color: white; text-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px white; }
 
+/* Seção de Conteúdo */
 .content {
     display: flex;
     justify-content: center;
@@ -43,6 +48,7 @@ nav a.filme { color: white; }
     padding: 20px;
 }
 
+/* Estilo Neon para Imagem e Caixa de Informação */
 .batman-info {
     text-align: center;
 }
@@ -57,33 +63,36 @@ nav a.filme { color: white; }
     padding: 15px;
     background-color: #2e2e8b; /* Cor de fundo para o quadrado */
     color: white; /* Cor do texto */
-    border-radius: 10px; /* Cantos arredondados */
-    max-width: 300px; /* Largura máxima do quadrado */
-    margin-left: auto; /* Centraliza horizontalmente */
-    margin-right: auto; /* Centraliza horizontalmente */
+    border-radius: 10px;
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #2e2e8b, 0 0 20px #2e2e8b, 0 0 25px #2e2e8b; /* Efeito neon */
 }
 
 .info-box h2 {
-    margin: 0 0 10px 0; /* Espaçamento abaixo do título */
-    font-size: 20px; /* Tamanho do título */
+    margin: 0 0 10px 0;
+    font-size: 20px;
 }
 
 .info-box p {
-    margin: 5px 0; /* Espaçamento entre os parágrafos */
+    margin: 5px 0;
 }
 
+/* Estilo Neon para História */
 .story {
     max-width: 600px;
     text-align: left;
 }
 
 .story h1 {
-    text-align: center; /* Centraliza o título em relação ao bloco de texto */
+    text-align: center;
     color: yellow;
     font-size: 28px;
     font-weight: bold;
     letter-spacing: 1px;
     margin-bottom: 10px;
+    text-shadow: 0 0 5px yellow, 0 0 10px yellow, 0 0 15px yellow, 0 0 20px yellow; /* Efeito neon */
 }
 
 .story h1 .highlight {
@@ -91,11 +100,12 @@ nav a.filme { color: white; }
     font-size: 32px;
     display: block;
     margin-top: 5px;
+    text-shadow: 0 0 5px hotpink, 0 0 10px hotpink, 0 0 15px hotpink, 0 0 20px hotpink; /* Efeito neon */
 }
 
 .story p {
     color: #ff4500;
     line-height: 1.6;
     font-size: 16px;
+    text-shadow: 0 0 5px #ff4500, 0 0 10px #ff4500, 0 0 15px #ff4500; /* Efeito neon */
 }
-
