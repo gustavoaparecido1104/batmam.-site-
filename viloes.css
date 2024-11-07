@@ -101,6 +101,13 @@ nav a {
 #duas-caras .vilao-nome {
     color: #ffffff;
 }
+/* Cores específicas para o texto de cada link */
+nav a.home { color: green; }
+nav a.habilidades { color: yellow; }
+nav a.aparencia { color: hotpink; }
+nav a.viloes { color: red; }
+nav a.gotham { color: blue; }
+nav a.filme { color: white; }
 
 #mulher-gato .vilao-nome {
     color: #292929;
