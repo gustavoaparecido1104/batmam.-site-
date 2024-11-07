@@ -20,7 +20,7 @@ nav a {
     text-decoration: none;
     padding: 10px 15px;
     margin: 0 5px;
-        background: linear-gradient(45deg,  #2e2e8b, #3498db);
+        background: #2e2e8b;
     border-radius: 15px;
     transition: background 0.3s, color 0.3s;
 }
