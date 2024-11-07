@@ -18,6 +18,7 @@ body {
   color: #ff0099;
   font-size: 3em;
   text-transform: uppercase;
+  text-shadow: 2px 2px 8px #ff0099;
 }
 
 .aparencia-titulo img {
@@ -27,33 +28,36 @@ body {
   border-radius: 10px;
 }
 
-/* Layout principal com grid para alinhamento das seções */
+/* Layout principal */
 .container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
   gap: 40px;
   padding: 20px 40px;
-  justify-items: center;
-  margin-top: -50px; /* Ajuste para posicionar a seção "Como Batman" e "Como Bruce Wayne" mais próximo ao título */
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .secao {
-  width: 80%;
+  width: 45%;
   padding: 20px;
   background-color: rgba(0, 0, 0, 0.7);
   border-radius: 10px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
 }
 
-/* Título e Texto "Como Batman" */
+/* Estilo para a seção "Como Batman" */
 .secao-batman h2 {
   font-size: 1.8em;
-  color: #00ffff; /* Cor azul */
+  color: #00ffff; /* Azul */
   text-align: center;
+  text-shadow: 2px 2px 8px #00ffff;
   margin-bottom: 10px;
 }
 
 .secao-batman p {
-  color: #00ffff; /* Cor azul para o texto */
+  color: #00ffff; /* Azul para o texto */
   font-size: 1em;
   line-height: 1.5;
   margin-bottom: 15px;
@@ -68,16 +72,17 @@ body {
   margin: 10px auto;
 }
 
-/* Título e Texto "Como Bruce Wayne" */
+/* Estilo para a seção "Como Bruce Wayne" */
 .secao-bruce h2 {
   font-size: 1.8em;
-  color: yellow; /* Cor amarela */
+  color: yellow; /* Amarelo */
   text-align: center;
+  text-shadow: 2px 2px 8px yellow;
   margin-bottom: 10px;
 }
 
 .secao-bruce p {
-  color: yellow; /* Cor amarela para o texto */
+  color: yellow; /* Amarelo para o texto */
   font-size: 1em;
   line-height: 1.5;
   margin-bottom: 15px;
@@ -102,6 +107,7 @@ body {
 .secao-personalidade h2 {
   color: #c0c0c0;
   font-size: 2em;
+  text-shadow: 2px 2px 8px #c0c0c0;
   margin-bottom: 10px;
 }
 
@@ -127,6 +133,7 @@ nav a {
   text-decoration: none;
   font-weight: bold;
   font-size: 14px;
+  text-shadow: 1px 1px 4px black;
 }
 
 /* Cores específicas para o texto de cada link */
