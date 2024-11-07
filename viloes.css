@@ -1,39 +1,37 @@
-/* Ajuste para o layout e cores do fundo */
+/* Estilos para o fundo e cores do texto */
 body {
     background-color: black;
     color: white;
     font-family: Arial, sans-serif;
 }
+header {
+    text-align: center;
+    padding: 20px 0;
+}
 
-/* Títulos */
+/* Estilo para o título principal e subtítulo */
 #viloes h1 {
-    color: #ff00ff;
+    color: #fd288d;
     font-size: 36px;
     font-weight: bold;
     text-align: center;
 }
 
 #viloes h2 {
-    color: #00ccff;
+    color: #004aad;
     font-size: 18px;
     text-align: center;
     margin-top: -10px;
 }
 
-/* Menu de navegação */
 nav a {
-    color: #ffffff;
-    background-color: #0000ff;
-    padding: 10px 15px;
-    margin: 5px;
-    text-decoration: none;
+    background-color: #2e2e8b;
+    color: white;
+    padding: 10px 20px;
     border-radius: 20px;
+    text-decoration: none;
     font-weight: bold;
-}
-
-nav a:hover {
-    background-color: #ff00ff;
-    color: black;
+    font-size: 14px;
 }
 
 /* Container dos vilões */
@@ -44,20 +42,18 @@ nav a:hover {
     margin-top: 20px;
 }
 
-/* Cartões dos vilões */
+/* Estilos para os cartões dos vilões */
 .vilao-card {
-    width: 160px; /* Ajuste para largura do cartão */
-    height: 280px; /* Ajuste para altura do cartão */
+    width: 150px;
     border-radius: 15px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-/* Ajuste das imagens para ocupar todo o cartão */
 .vilao-card img {
     width: 100%;
-    height: 220px; /* Altura da imagem ajustada para preencher o cartão */
+    height: 300px;
     object-fit: cover;
     border-radius: 15px;
     border: 3px solid #ff00ff;
@@ -77,8 +73,7 @@ nav a:hover {
 
 .vilao-card a {
     display: inline-block;
-    background-color: #0000ff;
-    color: white;
+    color: #ffde59;
     text-decoration: none;
     padding: 8px 12px;
     border-radius: 5px;
@@ -90,17 +85,17 @@ nav a:hover {
     color: black;
 }
 
-/* Cores específicas dos nomes */
+/* Estilos específicos de cada vilão */
 #coringa .vilao-nome {
-    color: #ff00ff;
+    color: #ff3131;
 }
 
 #pinguim .vilao-nome {
-    color: #0000ff;
+    color: #004aad;
 }
 
 #charada .vilao-nome {
-    color: #00ff00;
+    color: #00bf63;
 }
 
 #duas-caras .vilao-nome {
@@ -108,5 +103,5 @@ nav a:hover {
 }
 
 #mulher-gato .vilao-nome {
-    color: #333333;
+    color: #292929;
 }
