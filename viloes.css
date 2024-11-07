@@ -36,16 +36,12 @@ nav a:hover {
     color: black;
 }
 
-/* Estilos para a tabela de vilões */
-table {
-    width: 80%;
-    margin: auto;
-    text-align: center;
-    border-spacing: 15px;
-}
-
-table td {
-    padding: 15px;
+/* Container dos vilões */
+.vilao-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
 }
 
 /* Estilos para os cartões dos vilões */
@@ -59,6 +55,16 @@ table td {
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+    color: #ff00ff;
+}
+
+.vilao-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 3px solid #ff00ff;
+    margin-bottom: 10px;
 }
 
 /* Estilos específicos de cada vilão */
@@ -82,25 +88,8 @@ table td {
     background-color: #333333;
 }
 
-/* Estilos para as imagens dos vilões */
-table img {
-    width: 80px;
-    height: auto;
-    border-radius: 10px;
-    border: 3px solid #ff00ff;
-    margin-bottom: 10px;
-}
-
-/* Títulos dos vilões */
-#viloes div {
-    font-size: 18px;
-    font-weight: bold;
-    color: #ff00ff;
-    margin-top: 10px;
-}
-
 /* Botão de biografia */
-table a {
+.vilao-card a {
     display: inline-block;
     background-color: #0000ff;
     color: white;
@@ -108,10 +97,9 @@ table a {
     padding: 8px 12px;
     border-radius: 5px;
     font-weight: bold;
-    margin-top: 10px;
 }
 
-table a:hover {
+.vilao-card a:hover {
     background-color: #ff00ff;
     color: black;
 }
