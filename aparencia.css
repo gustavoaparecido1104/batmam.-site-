@@ -28,19 +28,17 @@ body {
   border-radius: 10px;
 }
 
-/* Layout principal */
+/* Layout principal com grid para alinhamento das seções */
 .container {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   gap: 40px;
   padding: 20px 40px;
-  max-width: 1200px;
-  margin: 0 auto;
+  justify-items: center;
 }
 
 .secao {
-  width: 45%;
+  width: 80%;
   padding: 20px;
   background-color: rgba(0, 0, 0, 0.7);
   border-radius: 10px;
