@@ -47,48 +47,32 @@ nav a:hover {
 /* Estilos para os cartões dos vilões */
 .vilao-card {
     width: 150px;
-    height: 300px;
-    padding: 20px;
     border-radius: 15px;
-    border: 3px solid #ff00ff;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
-    color: #ff00ff;
 }
 
 .vilao-card img {
     width: 100%;
-    height: 150px;
+    height: 200px;
     object-fit: cover;
-    border-radius: 10px;
+    border-radius: 15px;
     border: 3px solid #ff00ff;
+}
+
+/* Nome dos vilões */
+.vilao-nome {
+    font-size: 18px;
+    font-weight: bold;
     margin-bottom: 10px;
 }
 
-/* Estilos específicos de cada vilão */
-#coringa {
-    background-color: #000000;
-}
-
-#pinguim {
-    background-color: #0000ff;
-}
-
-#charada {
-    background-color: #00ff00;
-}
-
-#duas-caras {
-    background-color: #ffffff;
-}
-
-#mulher-gato {
-    background-color: #333333;
-}
-
 /* Botão de biografia */
+.vilao-card p {
+    margin-top: 10px;
+}
+
 .vilao-card a {
     display: inline-block;
     background-color: #0000ff;
@@ -102,4 +86,25 @@ nav a:hover {
 .vilao-card a:hover {
     background-color: #ff00ff;
     color: black;
+}
+
+/* Estilos específicos de cada vilão */
+#coringa .vilao-nome {
+    color: #ff00ff;
+}
+
+#pinguim .vilao-nome {
+    color: #0000ff;
+}
+
+#charada .vilao-nome {
+    color: #00ff00;
+}
+
+#duas-caras .vilao-nome {
+    color: #ffffff;
+}
+
+#mulher-gato .vilao-nome {
+    color: #333333;
 }
