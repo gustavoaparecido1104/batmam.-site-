@@ -73,6 +73,7 @@ nav a {
 
 .vilao-card a {
     display: inline-block;
+        background-color: #0000ff;
     color: #ffde59;
     text-decoration: none;
     padding: 8px 12px;
