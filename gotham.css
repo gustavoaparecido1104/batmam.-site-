@@ -25,13 +25,14 @@ nav a {
     transition: background 0.3s, color 0.3s;
 }
 
-/* Cores específicas para cada link */
-nav a[href="home.html"] { color: #00ff00; } /* Verde para Home */
-nav a[href="habilidades.html"] { color: #ffff00; } /* Amarelo para Habilidades */
-nav a[href="aparencia.html"] { color: #ff00ff; } /* Rosa para Aparência */
-nav a[href="viloes.html"] { color: #ff0000; } /* Vermelho para Vilões */
-nav a[href="gothamcity.html"] { color: #0000ff; } /* Azul para Gotham City */
-nav a[href="filme.html"] { color: #ffffff; } /* Branco para Filme */
+
+/* Cores específicas para o texto de cada link */
+nav a.home { color: green; text-shadow: 0 0 5px green, 0 0 10px green, 0 0 15px green; }
+nav a.habilidades { color: yellow; text-shadow: 0 0 5px yellow, 0 0 10px yellow, 0 0 15px yellow; }
+nav a.aparencia { color: hotpink; text-shadow: 0 0 5px hotpink, 0 0 10px hotpink, 0 0 15px hotpink; }
+nav a.viloes { color: red; text-shadow: 0 0 5px red, 0 0 10px red, 0 0 15px red; }
+nav a.gotham { color: blue; text-shadow: 0 0 5px blue, 0 0 10px blue, 0 0 15px blue; }
+nav a.filme { color: white; text-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px white; }
 
 nav a:hover {
     color: #000;
