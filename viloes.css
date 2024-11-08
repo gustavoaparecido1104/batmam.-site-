@@ -4,6 +4,7 @@ body {
     color: white;
     font-family: Arial, sans-serif;
 }
+
 header {
     text-align: center;
     padding: 20px 0;
@@ -15,6 +16,7 @@ header {
     font-size: 36px;
     font-weight: bold;
     text-align: center;
+    text-shadow: 0 0 10px #fd288d, 0 0 20px #fd288d, 0 0 30px #fd288d;
 }
 
 #viloes h2 {
@@ -22,8 +24,10 @@ header {
     font-size: 18px;
     text-align: center;
     margin-top: -10px;
+    text-shadow: 0 0 10px #004aad, 0 0 20px #004aad, 0 0 30px #004aad;
 }
 
+/* Estilo para os links de navegação com efeito neon */
 nav a {
     background-color: #2e2e8b;
     color: white;
@@ -32,7 +36,16 @@ nav a {
     text-decoration: none;
     font-weight: bold;
     font-size: 14px;
+    text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 15px #ffffff;
 }
+
+/* Cores específicas para o texto de cada link com neon */
+nav a.home { color: green; text-shadow: 0 0 5px green, 0 0 10px green, 0 0 15px green; }
+nav a.habilidades { color: yellow; text-shadow: 0 0 5px yellow, 0 0 10px yellow, 0 0 15px yellow; }
+nav a.aparencia { color: hotpink; text-shadow: 0 0 5px hotpink, 0 0 10px hotpink, 0 0 15px hotpink; }
+nav a.viloes { color: red; text-shadow: 0 0 5px red, 0 0 10px red, 0 0 15px red; }
+nav a.gotham { color: blue; text-shadow: 0 0 5px blue, 0 0 10px blue, 0 0 15px blue; }
+nav a.filme { color: white; text-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px white; }
 
 /* Container dos vilões */
 .vilao-container {
@@ -59,11 +72,38 @@ nav a {
     border: 3px solid #ff00ff;
 }
 
-/* Nome dos vilões */
+/* Nome dos vilões com efeito neon */
 .vilao-nome {
     font-size: 18px;
     font-weight: bold;
     margin-bottom: 10px;
+    text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 15px #ffffff;
+}
+
+/* Efeito neon específico para cada vilão */
+#coringa .vilao-nome {
+    color: #ff3131;
+    text-shadow: 0 0 5px #ff3131, 0 0 10px #ff3131, 0 0 15px #ff3131;
+}
+
+#pinguim .vilao-nome {
+    color: #004aad;
+    text-shadow: 0 0 5px #004aad, 0 0 10px #004aad, 0 0 15px #004aad;
+}
+
+#charada .vilao-nome {
+    color: #00bf63;
+    text-shadow: 0 0 5px #00bf63, 0 0 10px #00bf63, 0 0 15px #00bf63;
+}
+
+#duas-caras .vilao-nome {
+    color: #ffffff;
+    text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 15px #ffffff;
+}
+
+#mulher-gato .vilao-nome {
+    color: #292929;
+    text-shadow: 0 0 5px #292929, 0 0 10px #292929, 0 0 15px #292929;
 }
 
 /* Botão de biografia */
@@ -73,42 +113,16 @@ nav a {
 
 .vilao-card a {
     display: inline-block;
-     background-color: #0000ff;
+    background-color: #0000ff;
     color: #ffde59;
     text-decoration: none;
     padding: 8px 12px;
     border-radius: 5px;
     font-weight: bold;
+    text-shadow: 0 0 5px #ffde59, 0 0 10px #ffde59, 0 0 15px #ffde59;
 }
 
 .vilao-card a:hover {
     color: black;
-}
-
-/* Estilos específicos de cada vilão */
-#coringa .vilao-nome {
-    color: #ff3131;
-}
-
-#pinguim .vilao-nome {
-    color: #004aad;
-}
-
-#charada .vilao-nome {
-    color: #00bf63;
-}
-
-#duas-caras .vilao-nome {
-    color: #ffffff;
-}
-/* Cores específicas para o texto de cada link */
-nav a.home { color: green; }
-nav a.habilidades { color: yellow; }
-nav a.aparencia { color: hotpink; }
-nav a.viloes { color: red; }
-nav a.gotham { color: blue; }
-nav a.filme { color: white; }
-
-#mulher-gato .vilao-nome {
-    color: #292929;
+    text-shadow: none;
 }
