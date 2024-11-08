@@ -67,6 +67,32 @@ nav a.filme { color: white; text-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px
     transition: background-color 0.3s ease; /* Transição suave da cor de fundo */
 }
 
+/* Cor de fundo padrão para cada vilão */
+#coringa {
+    background-color: #ff3131; /* Cor de fundo vermelha para o Coringa */
+}
+
+#pinguim {
+    background-color: #004aad; /* Cor de fundo azul para o Pinguim */
+}
+
+#charada {
+    background-color: #00bf63; /* Cor de fundo verde para o Charada */
+}
+
+#duas-caras {
+    background-color: #ffffff; /* Cor de fundo branca para o Duas Caras */
+}
+
+#mulher-gato {
+    background-color: #292929; /* Cor de fundo preta para a Mulher-Gato */
+}
+
+/* Quando o mouse passa sobre o cartão, a imagem aparece e a cor de fundo some */
+.vilao-card:hover {
+    background-color: transparent; /* Remove o fundo para mostrar a imagem */
+}
+
 /* Imagens dos vilões - Inicialmente invisíveis */
 .vilao-card img {
     width: 100%;
@@ -78,30 +104,9 @@ nav a.filme { color: white; text-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px
     transition: opacity 0.5s ease-in-out; /* Animação suave de transição */
 }
 
-/* Efeito de hover para mostrar a imagem e mudar a cor de fundo */
+/* Efeito de hover para mostrar a imagem */
 .vilao-card:hover img {
     opacity: 1; /* Torna a imagem visível quando o mouse passa por cima */
-}
-
-/* Cores de fundo específicas para cada vilão */
-#coringa:hover {
-    background-color: #ff3131; /* Cor de fundo vermelha para o Coringa */
-}
-
-#pinguim:hover {
-    background-color: #004aad; /* Cor de fundo azul para o Pinguim */
-}
-
-#charada:hover {
-    background-color: #00bf63; /* Cor de fundo verde para o Charada */
-}
-
-#duas-caras:hover {
-    background-color: #ffffff; /* Cor de fundo branca para o Duas Caras */
-}
-
-#mulher-gato:hover {
-    background-color: #292929; /* Cor de fundo preta para a Mulher-Gato */
 }
 
 /* Nome dos vilões com efeito neon */
@@ -153,12 +158,6 @@ nav a.filme { color: white; text-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px
     font-weight: bold;
     text-shadow: 0 0 5px #ffde59, 0 0 10px #ffde59, 0 0 15px #ffde59;
 }
-
-.vilao-card a:hover {
-    color: black;
-    text-shadow: none;
-}
-
 
 .vilao-card a:hover {
     color: black;
