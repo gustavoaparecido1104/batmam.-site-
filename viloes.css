@@ -39,6 +39,7 @@ nav a {
     text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 15px #ffffff;
 }
 
+/* Cores específicas para o texto de cada link com neon */
 nav a.home { color: green; text-shadow: 0 0 5px green, 0 0 10px green, 0 0 15px green; }
 nav a.habilidades { color: yellow; text-shadow: 0 0 5px yellow, 0 0 10px yellow, 0 0 15px yellow; }
 nav a.aparencia { color: hotpink; text-shadow: 0 0 5px hotpink, 0 0 10px hotpink, 0 0 15px hotpink; }
@@ -64,59 +65,82 @@ nav a.filme { color: white; text-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px
     overflow: hidden;
     position: relative;
     transition: background-color 0.3s ease;
-    padding-bottom: 10px;
+    padding-bottom: 10px; /* Espaço para o botão */
 }
 
-/* Imagens dos vilões */
+/* Imagens dos vilões - Inicialmente invisíveis */
 .vilao-card img {
     width: 100%;
-    height: auto;
-    border-radius: 15px;
+    height: 100%;
     object-fit: cover;
+    border-radius: 15px;
+    opacity: 0; /* Começa invisível */
+    transition: opacity 0.5s ease-in-out; /* Animação suave de transição */
+    z-index: 1;
 }
 
-/* Cores de fundo específicas para cada vilão */
+/* Efeito de hover para mostrar a imagem e mudar a cor de fundo */
+.vilao-card:hover img {
+    opacity: 1; /* Torna a imagem visível quando o mouse passa por cima */
+}
+
+/* Cores de fundo específicas para cada vilão quando não está no hover */
 #coringa {
-    background-color: #ff3131;
+    background-color: #ff3131; /* Cor de fundo vermelha para o Coringa */
 }
 
 #pinguim {
-    background-color: #004aad;
+    background-color: #004aad; /* Cor de fundo azul para o Pinguim */
 }
 
 #charada {
-    background-color: #00bf63;
+    background-color: #00bf63; /* Cor de fundo verde para o Charada */
 }
 
 #duas-caras {
-    background-color: #ffffff;
+    background-color: #ffffff; /* Cor de fundo branca para o Duas Caras */
 }
 
 #mulher-gato {
-    background-color: #292929;
+    background-color: #292929; /* Cor de fundo preta para a Mulher-Gato */
 }
 
 /* Nome dos vilões com efeito neon */
 .vilao-nome {
     font-size: 18px;
     font-weight: bold;
-    margin: 10px 0;
+    margin-bottom: 10px;
+    text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 15px #ffffff;
+    z-index: 2; /* Mantém o texto visível acima da imagem */
+}
+
+/* Efeito neon específico para cada vilão */
+#coringa .vilao-nome {
+    color: #ff3131;
+    text-shadow: 0 0 5px #ff3131, 0 0 10px #ff3131, 0 0 15px #ff3131;
+}
+
+#pinguim .vilao-nome {
+    color: #004aad;
+    text-shadow: 0 0 5px #004aad, 0 0 10px #004aad, 0 0 15px #004aad;
+}
+
+#charada .vilao-nome {
+    color: #00bf63;
+    text-shadow: 0 0 5px #00bf63, 0 0 10px #00bf63, 0 0 15px #00bf63;
+}
+
+#duas-caras .vilao-nome {
+    color: #ffffff;
     text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 15px #ffffff;
 }
 
-#coringa .vilao-nome { color: #ff3131; }
-#pinguim .vilao-nome { color: #004aad; }
-#charada .vilao-nome { color: #00bf63; }
-#duas-caras .vilao-nome { color: #292929; }
-#mulher-gato .vilao-nome { color: #292929; }
-
-/* Contêiner para o botão de biografia */
-.bio-button-container {
-    margin-top: 10px;
-    text-align: center;
+#mulher-gato .vilao-nome {
+    color: #292929;
+    text-shadow: 0 0 5px #292929, 0 0 10px #292929, 0 0 15px #292929;
 }
 
-/* Estilo para o botão de biografia */
+/* Botão de biografia abaixo da imagem */
 .bio-button {
     display: inline-block;
     background-color: #0000ff;
@@ -126,6 +150,7 @@ nav a.filme { color: white; text-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px
     border-radius: 5px;
     font-weight: bold;
     text-shadow: 0 0 5px #ffde59, 0 0 10px #ffde59, 0 0 15px #ffde59;
+    margin-top: 10px;
     transition: color 0.3s ease, text-shadow 0.3s ease;
 }
 
@@ -134,3 +159,8 @@ nav a.filme { color: white; text-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px
     text-shadow: none;
 }
 
+/* Ajuste para o texto do botão */
+.vilao-card p {
+    margin: 0;
+    padding: 0;
+}
