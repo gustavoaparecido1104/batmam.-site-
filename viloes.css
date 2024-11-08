@@ -58,55 +58,33 @@ nav a.filme { color: white; text-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px
 /* Estilos para os cartões dos vilões */
 .vilao-card {
     width: 150px;
-    height: 300px;
     border-radius: 15px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-end;
     overflow: hidden;
     position: relative;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease; /* Transição suave da cor de fundo */
 }
 
 /* Imagens dos vilões - Inicialmente invisíveis */
 .vilao-card img {
     width: 100%;
-    height: 100%;
+    height: 300px;
     object-fit: cover;
-    position: absolute;
+    border-radius: 15px;
+    border: 3px solid #ff00ff;
+    opacity: 0; /* Começa invisível */
+    position: absolute; /* Fixa a imagem na posição do card */
     top: 0;
     left: 0;
-    border-radius: 15px;
-    opacity: 0; /* Começa invisível */
     transition: opacity 0.5s ease-in-out; /* Animação suave de transição */
     z-index: 1;
 }
 
-/* Efeito de hover para mostrar a imagem e mudar a cor de fundo */
+/* Efeito de hover para mostrar a imagem */
 .vilao-card:hover img {
     opacity: 1; /* Torna a imagem visível quando o mouse passa por cima */
-}
-
-/* Cores de fundo específicas para cada vilão quando não está no hover */
-#coringa {
-    background-color: #ff3131; /* Cor de fundo vermelha para o Coringa */
-}
-
-#pinguim {
-    background-color: #004aad; /* Cor de fundo azul para o Pinguim */
-}
-
-#charada {
-    background-color: #00bf63; /* Cor de fundo verde para o Charada */
-}
-
-#duas-caras {
-    background-color: #ffffff; /* Cor de fundo branca para o Duas Caras */
-}
-
-#mulher-gato {
-    background-color: #292929; /* Cor de fundo preta para a Mulher-Gato */
 }
 
 /* Nome dos vilões com efeito neon */
@@ -115,7 +93,8 @@ nav a.filme { color: white; text-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px
     font-weight: bold;
     margin-bottom: 10px;
     text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 15px #ffffff;
-    z-index: 2; /* Mantém o texto visível acima da imagem */
+    z-index: 2; /* Garante que o nome esteja acima da imagem */
+    position: relative;
 }
 
 /* Efeito neon específico para cada vilão */
@@ -145,11 +124,6 @@ nav a.filme { color: white; text-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px
 }
 
 /* Botão de biografia */
-.vilao-card p {
-    margin-top: 10px;
-    z-index: 2;
-}
-
 .vilao-card a {
     display: inline-block;
     background-color: #0000ff;
@@ -159,11 +133,33 @@ nav a.filme { color: white; text-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px
     border-radius: 5px;
     font-weight: bold;
     text-shadow: 0 0 5px #ffde59, 0 0 10px #ffde59, 0 0 15px #ffde59;
+    z-index: 2; /* Garante que o botão esteja acima da imagem */
     position: relative;
-    z-index: 2; /* Para ficar acima da imagem */
+    margin-top: 10px;
 }
 
 .vilao-card a:hover {
     color: black;
     text-shadow: none;
+}
+
+/* Cores de fundo específicas para cada vilão */
+#coringa:hover {
+    background-color: #ff3131; /* Cor de fundo vermelha para o Coringa */
+}
+
+#pinguim:hover {
+    background-color: #004aad; /* Cor de fundo azul para o Pinguim */
+}
+
+#charada:hover {
+    background-color: #00bf63; /* Cor de fundo verde para o Charada */
+}
+
+#duas-caras:hover {
+    background-color: #ffffff; /* Cor de fundo branca para o Duas Caras */
+}
+
+#mulher-gato:hover {
+    background-color: #292929; /* Cor de fundo preta para a Mulher-Gato */
 }
