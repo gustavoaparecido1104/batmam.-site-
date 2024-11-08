@@ -167,3 +167,24 @@ nav a.filme { color: white; text-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px
     color: black;
     text-shadow: none;
 }
+/* Estilo para o botão de biografia abaixo do cartão */
+.bio-button {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.bio-button a {
+    display: inline-block;
+    background-color: #0000ff;
+    color: #ffde59;
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-shadow: 0 0 5px #ffde59, 0 0 10px #ffde59, 0 0 15px #ffde59;
+}
+
+.bio-button a:hover {
+    color: black;
+    text-shadow: none;
+}
