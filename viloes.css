@@ -111,7 +111,8 @@ nav a.filme { color: white; text-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px
     font-weight: bold;
     margin-bottom: 10px;
     text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 15px #ffffff;
-    z-index: 2; /* Mantém o texto visível acima da imagem */
+    position: relative;
+    z-index: 2; /* Coloca o nome acima da imagem */
 }
 
 /* Efeito neon específico para cada vilão */
