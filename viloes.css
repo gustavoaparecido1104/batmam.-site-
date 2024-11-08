@@ -64,8 +64,7 @@ nav a.filme { color: white; text-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px
     align-items: center;
     overflow: hidden;
     position: relative;
-    transition: background-color 0.3s ease;
-    padding-bottom: 40px; /* Espaço para o botão */
+    transition: background-color 0.3s ease; /* Transição suave da cor de fundo */
 }
 
 /* Imagens dos vilões - Inicialmente invisíveis */
@@ -75,34 +74,34 @@ nav a.filme { color: white; text-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px
     object-fit: cover;
     border-radius: 15px;
     border: 3px solid #ff00ff;
-    opacity: 0;
-    transition: opacity 0.5s ease-in-out;
+    opacity: 0; /* Começa invisível */
+    transition: opacity 0.5s ease-in-out; /* Animação suave de transição */
 }
 
-/* Efeito de hover para mostrar a imagem */
+/* Efeito de hover para mostrar a imagem e mudar a cor de fundo */
 .vilao-card:hover img {
-    opacity: 1;
+    opacity: 1; /* Torna a imagem visível quando o mouse passa por cima */
 }
 
 /* Cores de fundo específicas para cada vilão */
-#coringa {
-    background-color: #ff3131;
+#coringa:hover {
+    background-color: #ff3131; /* Cor de fundo vermelha para o Coringa */
 }
 
-#pinguim {
-    background-color: #004aad;
+#pinguim:hover {
+    background-color: #004aad; /* Cor de fundo azul para o Pinguim */
 }
 
-#charada {
-    background-color: #00bf63;
+#charada:hover {
+    background-color: #00bf63; /* Cor de fundo verde para o Charada */
 }
 
-#duas-caras {
-    background-color: #ffffff;
+#duas-caras:hover {
+    background-color: #ffffff; /* Cor de fundo branca para o Duas Caras */
 }
 
-#mulher-gato {
-    background-color: #292929;
+#mulher-gato:hover {
+    background-color: #292929; /* Cor de fundo preta para a Mulher-Gato */
 }
 
 /* Nome dos vilões com efeito neon */
@@ -140,6 +139,10 @@ nav a.filme { color: white; text-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px
 }
 
 /* Botão de biografia */
+.vilao-card p {
+    margin-top: 10px;
+}
+
 .vilao-card a {
     display: inline-block;
     background-color: #0000ff;
@@ -149,11 +152,13 @@ nav a.filme { color: white; text-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px
     border-radius: 5px;
     font-weight: bold;
     text-shadow: 0 0 5px #ffde59, 0 0 10px #ffde59, 0 0 15px #ffde59;
-    position: absolute;
-    bottom: 10px;
-    left: 50%;
-    transform: translateX(-50%);
 }
+
+.vilao-card a:hover {
+    color: black;
+    text-shadow: none;
+}
+
 
 .vilao-card a:hover {
     color: black;
