@@ -58,15 +58,15 @@ nav a.filme { color: white; text-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px
 /* Estilos para os cartões dos vilões */
 .vilao-card {
     width: 150px;
-    height: 300px;
+    height: auto; /* Permite que o cartão ajuste sua altura */
     border-radius: 15px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-end;
     overflow: hidden;
     position: relative;
     transition: background-color 0.3s ease;
+    padding-bottom: 10px; /* Espaço para o botão */
 }
 
 /* Imagens dos vilões - Inicialmente invisíveis */
@@ -144,13 +144,8 @@ nav a.filme { color: white; text-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px
     text-shadow: 0 0 5px #292929, 0 0 10px #292929, 0 0 15px #292929;
 }
 
-/* Botão de biografia */
-.vilao-card p {
-    margin-top: 10px;
-    z-index: 2;
-}
-
-.vilao-card a {
+/* Estilo para o botão de biografia abaixo da imagem */
+.bio-button {
     display: inline-block;
     background-color: #0000ff;
     color: #ffde59;
@@ -159,32 +154,19 @@ nav a.filme { color: white; text-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px
     border-radius: 5px;
     font-weight: bold;
     text-shadow: 0 0 5px #ffde59, 0 0 10px #ffde59, 0 0 15px #ffde59;
+    margin-top: 10px;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
     position: relative;
     z-index: 2; /* Para ficar acima da imagem */
 }
 
-.vilao-card a:hover {
+.bio-button:hover {
     color: black;
     text-shadow: none;
 }
-/* Estilo para o botão de biografia abaixo do cartão */
-.bio-button {
-    text-align: center;
-    margin-top: 10px;
-}
 
-.bio-button a {
-    display: inline-block;
-    background-color: #0000ff;
-    color: #ffde59;
-    text-decoration: none;
-    padding: 8px 12px;
-    border-radius: 5px;
-    font-weight: bold;
-    text-shadow: 0 0 5px #ffde59, 0 0 10px #ffde59, 0 0 15px #ffde59;
-}
-
-.bio-button a:hover {
-    color: black;
-    text-shadow: none;
+/* Ajuste para o texto do botão */
+.vilao-card p {
+    margin: 0;
+    padding: 0;
 }
