@@ -1,10 +1,58 @@
-/* Container dos vilões (ajuste para permitir o posicionamento absoluto do nome) */
+/* Estilos para o fundo e cores do texto */
+body {
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Estilo para o título principal e subtítulo */
+#viloes h1 {
+    color: #fd288d;
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 0 0 10px #fd288d, 0 0 20px #fd288d, 0 0 30px #fd288d;
+}
+
+#viloes h2 {
+    color: #004aad;
+    font-size: 18px;
+    text-align: center;
+    margin-top: -10px;
+    text-shadow: 0 0 10px #004aad, 0 0 20px #004aad, 0 0 30px #004aad;
+}
+
+/* Estilo para os links de navegação com efeito neon */
+nav a {
+    background-color: #2e2e8b;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+    text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 15px #ffffff;
+}
+
+/* Cores específicas para o texto de cada link com neon */
+nav a.home { color: green; text-shadow: 0 0 5px green, 0 0 10px green, 0 0 15px green; }
+nav a.habilidades { color: yellow; text-shadow: 0 0 5px yellow, 0 0 10px yellow, 0 0 15px yellow; }
+nav a.aparencia { color: hotpink; text-shadow: 0 0 5px hotpink, 0 0 10px hotpink, 0 0 15px hotpink; }
+nav a.viloes { color: red; text-shadow: 0 0 5px red, 0 0 10px red, 0 0 15px red; }
+nav a.gotham { color: blue; text-shadow: 0 0 5px blue, 0 0 10px blue, 0 0 15px blue; }
+nav a.filme { color: white; text-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px white; }
+
+/* Container dos vilões */
 .vilao-container {
     display: flex;
     justify-content: center;
     gap: 20px;
     margin-top: 20px;
-    position: relative; /* Permite o posicionamento dos nomes sobre os cartões */
 }
 
 /* Estilos para os cartões dos vilões */
@@ -57,16 +105,13 @@
     background-color: #292929; /* Cor de fundo preta para a Mulher-Gato */
 }
 
-/* Nome dos vilões com efeito neon, agora posicionado sobre o container */
+/* Nome dos vilões com efeito neon */
 .vilao-nome {
     font-size: 18px;
     font-weight: bold;
     margin-bottom: 10px;
     text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 15px #ffffff;
-    position: absolute; /* Posiciona o nome sobre o cartão */
-    top: -25px; /* Ajusta a posição para que o nome fique em cima do cartão */
-    left: 50%;
-    transform: translateX(-50%); /* Centraliza o nome horizontalmente */
+    position: relative;
     z-index: 2; /* Coloca o nome acima da imagem */
 }
 
