@@ -58,93 +58,55 @@ nav a.filme { color: white; text-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px
 /* Estilos para os cartões dos vilões */
 .vilao-card {
     width: 150px;
-    height: auto; /* Permite que o cartão ajuste sua altura */
     border-radius: 15px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    overflow: hidden;
     position: relative;
+    padding: 10px 0;
     transition: background-color 0.3s ease;
-    padding-bottom: 10px; /* Espaço para o botão */
 }
 
-/* Imagens dos vilões - Inicialmente invisíveis */
-.vilao-card img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    position: absolute;
-    top: 0;
-    left: 0;
-    border-radius: 15px;
-    opacity: 0; /* Começa invisível */
-    transition: opacity 0.5s ease-in-out; /* Animação suave de transição */
-    z-index: 1;
-}
-
-/* Efeito de hover para mostrar a imagem e mudar a cor de fundo */
-.vilao-card:hover img {
-    opacity: 1; /* Torna a imagem visível quando o mouse passa por cima */
-}
-
-/* Cores de fundo específicas para cada vilão quando não está no hover */
-#coringa {
-    background-color: #ff3131; /* Cor de fundo vermelha para o Coringa */
-}
-
-#pinguim {
-    background-color: #004aad; /* Cor de fundo azul para o Pinguim */
-}
-
-#charada {
-    background-color: #00bf63; /* Cor de fundo verde para o Charada */
-}
-
-#duas-caras {
-    background-color: #ffffff; /* Cor de fundo branca para o Duas Caras */
-}
-
-#mulher-gato {
-    background-color: #292929; /* Cor de fundo preta para a Mulher-Gato */
-}
-
-/* Nome dos vilões com efeito neon */
+/* Nome dos vilões com efeito neon, posicionado acima da imagem */
 .vilao-nome {
     font-size: 18px;
     font-weight: bold;
     margin-bottom: 10px;
     text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 15px #ffffff;
-    z-index: 2; /* Mantém o texto visível acima da imagem */
+    z-index: 2;
+    text-align: center;
 }
 
 /* Efeito neon específico para cada vilão */
-#coringa .vilao-nome {
-    color: #ff3131;
-    text-shadow: 0 0 5px #ff3131, 0 0 10px #ff3131, 0 0 15px #ff3131;
+#coringa .vilao-nome { color: #ff3131; text-shadow: 0 0 5px #ff3131, 0 0 10px #ff3131, 0 0 15px #ff3131; }
+#pinguim .vilao-nome { color: #004aad; text-shadow: 0 0 5px #004aad, 0 0 10px #004aad, 0 0 15px #004aad; }
+#charada .vilao-nome { color: #00bf63; text-shadow: 0 0 5px #00bf63, 0 0 10px #00bf63, 0 0 15px #00bf63; }
+#duas-caras .vilao-nome { color: #ffffff; text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 15px #ffffff; }
+#mulher-gato .vilao-nome { color: #292929; text-shadow: 0 0 5px #292929, 0 0 10px #292929, 0 0 15px #292929; }
+
+/* Imagens dos vilões */
+.vilao-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 15px;
+    transition: opacity 0.5s ease-in-out;
+    z-index: 1;
 }
 
-#pinguim .vilao-nome {
-    color: #004aad;
-    text-shadow: 0 0 5px #004aad, 0 0 10px #004aad, 0 0 15px #004aad;
+/* Efeito de hover para a imagem */
+.vilao-card:hover img {
+    opacity: 1;
 }
 
-#charada .vilao-nome {
-    color: #00bf63;
-    text-shadow: 0 0 5px #00bf63, 0 0 10px #00bf63, 0 0 15px #00bf63;
-}
+/* Cores de fundo específicas para cada vilão */
+#coringa { background-color: #ff3131; }
+#pinguim { background-color: #004aad; }
+#charada { background-color: #00bf63; }
+#duas-caras { background-color: #ffffff; }
+#mulher-gato { background-color: #292929; }
 
-#duas-caras .vilao-nome {
-    color: #ffffff;
-    text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 15px #ffffff;
-}
-
-#mulher-gato .vilao-nome {
-    color: #292929;
-    text-shadow: 0 0 5px #292929, 0 0 10px #292929, 0 0 15px #292929;
-}
-
-/* Estilo para o botão de biografia abaixo da imagem */
+/* Estilo para o botão de biografia posicionado abaixo da imagem */
 .bio-button {
     display: inline-block;
     background-color: #0000ff;
@@ -156,17 +118,11 @@ nav a.filme { color: white; text-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px
     text-shadow: 0 0 5px #ffde59, 0 0 10px #ffde59, 0 0 15px #ffde59;
     margin-top: 10px;
     transition: color 0.3s ease, text-shadow 0.3s ease;
-    position: relative;
-    z-index: 2; /* Para ficar acima da imagem */
+    z-index: 2;
+    text-align: center;
 }
 
 .bio-button:hover {
     color: black;
     text-shadow: none;
-}
-
-/* Ajuste para o texto do botão */
-.vilao-card p {
-    margin: 0;
-    padding: 0;
 }
