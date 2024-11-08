@@ -1,5 +1,4 @@
-/* gotham.css */
-
+/* Estilo Geral */
 body {
     background-color: black;
     color: white;
@@ -16,27 +15,49 @@ header {
     text-align: center;
 }
 
+/* Navegação com Efeito Neon */
 nav a {
     text-decoration: none;
     padding: 10px 15px;
     margin: 0 5px;
-        background: #2e2e8b;
+    background: #2e2e8b;
     border-radius: 15px;
     transition: background 0.3s, color 0.3s;
 }
 
+/* Cores específicas para o texto de cada link com alta especificidade */
+nav a.home { 
+    color: green !important; 
+    text-shadow: 0 0 5px green, 0 0 10px green, 0 0 15px green; 
+}
 
-/* Cores específicas para o texto de cada link */
-nav a.home { color: green; text-shadow: 0 0 5px green, 0 0 10px green, 0 0 15px green; }
-nav a.habilidades { color: yellow; text-shadow: 0 0 5px yellow, 0 0 10px yellow, 0 0 15px yellow; }
-nav a.aparencia { color: hotpink; text-shadow: 0 0 5px hotpink, 0 0 10px hotpink, 0 0 15px hotpink; }
-nav a.viloes { color: red; text-shadow: 0 0 5px red, 0 0 10px red, 0 0 15px red; }
-nav a.gotham { color: blue; text-shadow: 0 0 5px blue, 0 0 10px blue, 0 0 15px blue; }
-nav a.filme { color: white; text-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px white; }
+nav a.habilidades { 
+    color: yellow; 
+    text-shadow: 0 0 5px yellow, 0 0 10px yellow, 0 0 15px yellow; 
+}
+
+nav a.aparencia { 
+    color: hotpink; 
+    text-shadow: 0 0 5px hotpink, 0 0 10px hotpink; 
+}
+
+nav a.viloes { 
+    color: red; 
+    text-shadow: 0 0 5px red, 0 0 10px red, 0 0 15px red; 
+}
+
+nav a.gotham { 
+    color: blue !important; 
+    text-shadow: 0 0 5px blue, 0 0 10px blue, 0 0 15px blue; 
+}
+
+nav a.filme { 
+    color: white; 
+    text-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px white; 
+}
 
 nav a:hover {
     color: #000;
-    
 }
 
 h1 {
@@ -105,4 +126,3 @@ footer {
     color: #f39c12;
     text-shadow: 0 0 10px #f39c12;
 }
-
