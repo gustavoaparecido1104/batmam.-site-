@@ -57,7 +57,7 @@ nav a.filme { color: white; text-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px
 
 /* Estilos para os cartões dos vilões */
 .vilao-card {
-    width: 150px;
+    width: 200px;
     border-radius: 15px;
     display: flex;
     flex-direction: column;
@@ -71,7 +71,7 @@ nav a.filme { color: white; text-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px
 /* Imagens dos vilões - Inicialmente invisíveis */
 .vilao-card img {
     width: 100%;
-    height: 100%;
+    height: 300px;
     object-fit: cover;
     border-radius: 15px;
     opacity: 0; /* Começa invisível */
@@ -117,27 +117,27 @@ nav a.filme { color: white; text-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px
 
 /* Efeito neon específico para cada vilão */
 #coringa .vilao-nome {
-    color: #ff3131;
+    color: #ff3131; /* Cor de texto vermelha para o Coringa */
     text-shadow: 0 0 5px #ff3131, 0 0 10px #ff3131, 0 0 15px #ff3131;
 }
 
 #pinguim .vilao-nome {
-    color: #004aad;
+    color: #004aad; /* Cor de texto azul para o Pinguim */
     text-shadow: 0 0 5px #004aad, 0 0 10px #004aad, 0 0 15px #004aad;
 }
 
 #charada .vilao-nome {
-    color: #00bf63;
+    color: #00bf63; /* Cor de texto verde para o Charada */
     text-shadow: 0 0 5px #00bf63, 0 0 10px #00bf63, 0 0 15px #00bf63;
 }
 
 #duas-caras .vilao-nome {
-    color: #ffffff;
+    color: #ffffff; /* Cor de texto branca para o Duas Caras */
     text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 15px #ffffff;
 }
 
 #mulher-gato .vilao-nome {
-    color: #292929;
+    color: #292929; /* Cor de texto preta para a Mulher-Gato */
     text-shadow: 0 0 5px #292929, 0 0 10px #292929, 0 0 15px #292929;
 }
 
