@@ -58,56 +58,51 @@ nav a.filme { color: white; text-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px
 /* Estilos para os cartões dos vilões */
 .vilao-card {
     width: 150px;
-    height: 300px;
     border-radius: 15px;
     display: flex;
     flex-direction: column;
     align-items: center;
     overflow: hidden;
     position: relative;
-    transition: background-color 0.3s ease; /* Transição suave da cor de fundo */
-}
-
-/* Cor de fundo padrão para cada vilão */
-#coringa {
-    background-color: #ff3131; /* Cor de fundo vermelha para o Coringa */
-}
-
-#pinguim {
-    background-color: #004aad; /* Cor de fundo azul para o Pinguim */
-}
-
-#charada {
-    background-color: #00bf63; /* Cor de fundo verde para o Charada */
-}
-
-#duas-caras {
-    background-color: #ffffff; /* Cor de fundo branca para o Duas Caras */
-}
-
-#mulher-gato {
-    background-color: #292929; /* Cor de fundo preta para a Mulher-Gato */
-}
-
-/* Quando o mouse passa sobre o cartão, a imagem aparece e a cor de fundo some */
-.vilao-card:hover {
-    background-color: transparent; /* Remove o fundo para mostrar a imagem */
+    transition: background-color 0.3s ease;
+    padding-bottom: 40px; /* Espaço para o botão */
 }
 
 /* Imagens dos vilões - Inicialmente invisíveis */
 .vilao-card img {
     width: 100%;
-    height: 100%;
+    height: 300px;
     object-fit: cover;
     border-radius: 15px;
     border: 3px solid #ff00ff;
-    opacity: 0; /* Começa invisível */
-    transition: opacity 0.5s ease-in-out; /* Animação suave de transição */
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
 }
 
 /* Efeito de hover para mostrar a imagem */
 .vilao-card:hover img {
-    opacity: 1; /* Torna a imagem visível quando o mouse passa por cima */
+    opacity: 1;
+}
+
+/* Cores de fundo específicas para cada vilão */
+#coringa {
+    background-color: #ff3131;
+}
+
+#pinguim {
+    background-color: #004aad;
+}
+
+#charada {
+    background-color: #00bf63;
+}
+
+#duas-caras {
+    background-color: #ffffff;
+}
+
+#mulher-gato {
+    background-color: #292929;
 }
 
 /* Nome dos vilões com efeito neon */
@@ -145,10 +140,6 @@ nav a.filme { color: white; text-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px
 }
 
 /* Botão de biografia */
-.vilao-card p {
-    margin-top: 10px;
-}
-
 .vilao-card a {
     display: inline-block;
     background-color: #0000ff;
@@ -158,6 +149,10 @@ nav a.filme { color: white; text-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px
     border-radius: 5px;
     font-weight: bold;
     text-shadow: 0 0 5px #ffde59, 0 0 10px #ffde59, 0 0 15px #ffde59;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .vilao-card a:hover {
