@@ -7,12 +7,37 @@ FILME: TEM UM BOTAO DE CLIQUE AQUI PRA VER APENAS
 
 REFERÊNCIAS DAS IMAGENS:
 https://www.reddit.com/r/batman/comments/1bv74ku/what_do_you_think_bruces_daily_routine_was_like/?tl=pt-br&rdt=54824
+
 https://zonafantasmanet.wordpress.com/2023/04/18/batman-122/
+
 https://www1.folha.uol.com.br/blogs/quadro-negro/2022/03/the-batman-e-pastel-de-vento-infantilizado-e-infantilizante.shtml
+
 https://artofentertainment.com/collections/batman?view=boost-pfs-original
+
 https://br.pinterest.com/pin/1096485840497321156/
+
 https://br.pinterest.com/pin/gotham-city--874120608905374735/
+
 https://br.pinterest.com/pin/782007922801844246/
+
 https://dc.fandom.com/pt-br/wiki/Edward_Nashton_(Nova_Terra)
+
 https://jovemnerd.com.br/noticias/hqs-e-livros/dc-vai-recontar-origem-do-coringa-em-nova-hq-do-batman
+
 https://art.alphacoders.com/arts/view/59797#google_vignette
+
+
+EXPLICAÇOES: HOME: ESTA FALTANDO O BATMAN EM CIMA DA IMAGEM,O CONTENDER DO PARA O TITULO DO BATMAN TAVA DANDO CONFLITO AI A GENTE REMOVEU POR QUE NAO ESTAVA DANDO O ESPAÇAMENTO ENTRE A IMAGEM E ELE.
+
+HABILIDADES:NAO CONSEGUIMOS ACHAR AS IMAGENS DO CANVA POR ISSO TIVEMOS QUE MODIFICAR AS IMAGENS, E ACABAMOS NAO CONSEGUINDO COLOCAR OS FLASHS NAO CONSEGUIMOS EFETIVAR
+
+APARENCIA: A GENTE DEIXOU DIFERENTE PELO FATO QUE A IMAGEM ABAIXO DO TITULO APARENCIA NAO CONSEGUIU FICAR EMBAIXO PORQUE TAVA DANDO ERRO/BUGANDO COM AS IMAGENS NO MEIO
+
+VILOES: COLOCAMOS O CLIQUE DO BOATAO MAIS EM CIMA PARA DEIXAR MAIS BONITO E MAIS FACIL ENTENDIMENTO E AS CORES DOS NOMES DOS PERSONAGENS NAO SABEMOS POR QUE QUE NAO FICOU AS CORES
+
+GOTHAM: APENAS TIRAMOS AS GOTAS DA´GUA
+
+FILME: SO NAO TEM A BORDA DO COMPUTADOR
+
+
+
