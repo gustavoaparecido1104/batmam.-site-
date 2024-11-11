@@ -101,7 +101,7 @@ nav a.filme { color: white; text-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px
 }
 
 .story p {
-    color: #ff4500;
+    color: red;
     line-height: 1.6;
     font-size: 16px;
 }
